@@ -19,7 +19,7 @@ with frequent_ss_items as
         where ss_customer_sk = c_customer_sk
          and ss_sold_date_sk = d_date_sk
          and d_year in (1999,1999+1,1999+2,1999+3) 
-        group by c_customer_sk)),
+        group by c_customer_sk) as x),
  best_ss_customer as
  (select c_customer_sk,sum(ss_quantity*ss_sales_price) ssales
   from store_sales
