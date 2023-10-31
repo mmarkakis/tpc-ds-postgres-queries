@@ -8,8 +8,8 @@ with ss as
       date_dim,
       store
  where ss_sold_date_sk = d_date_sk
-       and d_date between cast('1998-08-04' as date) 
-                  and (cast('1998-08-04' as date) +  30 days) 
+       and d_date between '1998-08-04'::date 
+                  and ('1998-08-04'::date + interval '30 days') 
        and ss_store_sk = s_store_sk
  group by s_store_sk)
  ,
@@ -21,8 +21,8 @@ with ss as
       date_dim,
       store
  where sr_returned_date_sk = d_date_sk
-       and d_date between cast('1998-08-04' as date)
-                  and (cast('1998-08-04' as date) +  30 days)
+       and d_date between '1998-08-04'::date
+                  and ('1998-08-04'::date + interval '30 days')
        and sr_store_sk = s_store_sk
  group by s_store_sk), 
  cs as
@@ -32,8 +32,8 @@ with ss as
  from catalog_sales,
       date_dim
  where cs_sold_date_sk = d_date_sk
-       and d_date between cast('1998-08-04' as date)
-                  and (cast('1998-08-04' as date) +  30 days)
+       and d_date between '1998-08-04'::date
+                  and ('1998-08-04'::date + interval '30 days')
  group by cs_call_center_sk 
  ), 
  cr as
@@ -43,8 +43,8 @@ with ss as
  from catalog_returns,
       date_dim
  where cr_returned_date_sk = d_date_sk
-       and d_date between cast('1998-08-04' as date)
-                  and (cast('1998-08-04' as date) +  30 days)
+       and d_date between '1998-08-04'::date
+                  and ('1998-08-04'::date + interval '30 days')
  group by cr_call_center_sk
  ), 
  ws as
@@ -55,8 +55,8 @@ with ss as
       date_dim,
       web_page
  where ws_sold_date_sk = d_date_sk
-       and d_date between cast('1998-08-04' as date)
-                  and (cast('1998-08-04' as date) +  30 days)
+       and d_date between '1998-08-04'::date
+                  and ('1998-08-04'::date + interval '30 days')
        and ws_web_page_sk = wp_web_page_sk
  group by wp_web_page_sk), 
  wr as
@@ -67,8 +67,8 @@ with ss as
       date_dim,
       web_page
  where wr_returned_date_sk = d_date_sk
-       and d_date between cast('1998-08-04' as date)
-                  and (cast('1998-08-04' as date) +  30 days)
+       and d_date between '1998-08-04'::date
+                  and ('1998-08-04'::date + interval '30 days')
        and wr_web_page_sk = wp_web_page_sk
  group by wp_web_page_sk)
   select  channel
