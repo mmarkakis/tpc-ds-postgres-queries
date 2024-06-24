@@ -1,6 +1,6 @@
 -- Filename: query085.sql
 
-select  substr(r_reason_desc,1,20)
+select  substring(r_reason_desc,1,20)
        ,avg(ws_quantity)
        ,avg(wr_refunded_cash)
        ,avg(wr_fee)
@@ -76,7 +76,7 @@ select  substr(r_reason_desc,1,20)
     )
    )
 group by r_reason_desc
-order by substr(r_reason_desc,1,20)
+order by substring(r_reason_desc,1,20)
         ,avg(ws_quantity)
         ,avg(wr_refunded_cash)
         ,avg(wr_fee)
