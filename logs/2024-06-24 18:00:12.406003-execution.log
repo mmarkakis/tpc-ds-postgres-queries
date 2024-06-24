@@ -1,0 +1,211 @@
+2024-06-24 18:00:12.406218 Executing query 076	2024-06-24 18:00:29.963105 Executed query 076 in 17.317282 seconds
+2024-06-24 18:00:29.963512 Executing query 012	2024-06-24 18:00:41.085624 Executed query 012 in 10.92305 seconds
+2024-06-24 18:00:41.086039 Executing query 091	2024-06-24 18:00:54.010861 Executed query 091 in 12.759945 seconds
+2024-06-24 18:00:54.011273 Executing query 044	2024-06-24 18:01:06.560741 Executed query 044 in 11.891468 seconds
+2024-06-24 18:01:06.561155 Executing query 042	2024-06-24 18:01:13.212655 Executed query 042 in 5.982995 seconds
+2024-06-24 18:01:13.213057 Executing query 038	2024-06-24 18:01:29.296322 Executed query 038 in 15.41373 seconds
+2024-06-24 18:01:29.296735 Executing query 060	2024-06-24 18:01:44.340897 Executed query 060 in 14.394285 seconds
+2024-06-24 18:01:44.341338 Executing query 034	2024-06-24 18:01:51.771221 Executed query 034 in 7.229314 seconds
+2024-06-24 18:01:51.771643 Executing query 053	2024-06-24 18:01:58.967077 Executed query 053 in 7.023216 seconds
+2024-06-24 18:01:58.967480 Executing query 039	2024-06-24 18:02:11.130845 Executed query 039 in 11.424455 seconds
+2024-06-24 18:02:11.131246 Executing query 056	2024-06-24 18:02:22.520607 Executed query 056 in 10.69707 seconds
+2024-06-24 18:02:22.521019 Executing query 099	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     612561[child_sequence:1]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073848456]
+  -----------------------------------------------
+
+
+	2024-06-24 18:02:22.814461 Failed to execute query 099
+2024-06-24 18:02:22.814965 Executing query 050	2024-06-24 18:02:29.900161 Executed query 050 in 6.914155 seconds
+2024-06-24 18:02:29.900539 Executing query 055	2024-06-24 18:02:35.186733 Executed query 055 in 4.602423 seconds
+2024-06-24 18:02:35.187135 Executing query 009	2024-06-24 18:02:40.147850 Executed query 009 in 4.755839 seconds
+2024-06-24 18:02:40.148220 Executing query 001	2024-06-24 18:02:49.725372 Executed query 001 in 9.406964 seconds
+2024-06-24 18:02:49.725777 Executing query 019	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     612607[child_sequence:1]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073758367]
+  -----------------------------------------------
+
+
+	2024-06-24 18:02:49.949765 Failed to execute query 019
+2024-06-24 18:02:49.950263 Executing query 037	2024-06-24 18:02:55.222156 Executed query 037 in 4.596336 seconds
+2024-06-24 18:02:55.222509 Executing query 094	2024-06-24 18:03:00.914173 Executed query 094 in 5.528259 seconds
+2024-06-24 18:03:00.914545 Executing query 049	2024-06-24 18:03:12.550178 Executed query 049 in 11.425136 seconds
+2024-06-24 18:03:12.550580 Executing query 029	2024-06-24 18:03:24.341097 Executed query 029 in 11.623164 seconds
+2024-06-24 18:03:24.341531 Executing query 043	2024-06-24 18:03:30.273118 Executed query 043 in 5.769231 seconds
+2024-06-24 18:03:30.273500 Executing query 016	2024-06-24 18:03:40.747335 Executed query 016 in 10.263365 seconds
+2024-06-24 18:03:40.747732 Executing query 032	2024-06-24 18:03:47.825864 Executed query 032 in 6.909347 seconds
+2024-06-24 18:03:47.826283 Executing query 096	2024-06-24 18:03:48.992831 Executed query 096 in 0.810627 seconds
+2024-06-24 18:03:48.993177 Executing query 031	2024-06-24 18:03:56.992229 Executed query 031 in 7.807863 seconds
+2024-06-24 18:03:56.992632 Executing query 007	2024-06-24 18:04:03.285483 Executed query 007 in 6.131575 seconds
+2024-06-24 18:04:03.285874 Executing query 041	2024-06-24 18:04:08.620351 Executed query 041 in 5.173565 seconds
+2024-06-24 18:04:08.620732 Executing query 010	2024-06-24 18:04:18.163170 Executed query 010 in 9.369124 seconds
+2024-06-24 18:04:18.163596 Executing query 023	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     612725[child_sequence:3]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073971351]
+  -----------------------------------------------
+
+
+	2024-06-24 18:04:26.972892 Failed to execute query 023
+2024-06-24 18:04:26.973488 Executing query 063	2024-06-24 18:04:30.190005 Executed query 063 in 3.052302 seconds
+2024-06-24 18:04:30.190371 Executing query 004	2024-06-24 18:04:40.224692 Executed query 004 in 9.871012 seconds
+2024-06-24 18:04:40.225169 Executing query 088	2024-06-24 18:04:44.215682 Executed query 088 in 3.807121 seconds
+2024-06-24 18:04:44.216078 Executing query 046	2024-06-24 18:04:50.884395 Executed query 046 in 6.505113 seconds
+2024-06-24 18:04:50.884808 Executing query 066	2024-06-24 18:05:01.908518 Executed query 066 in 10.846155 seconds
+2024-06-24 18:05:01.908919 Executing query 065	2024-06-24 18:05:09.393649 Executed query 065 in 7.311464 seconds
+2024-06-24 18:05:09.394034 Executing query 086	2024-06-24 18:05:16.736219 Executed query 086 in 7.180875 seconds
+2024-06-24 18:05:16.736654 Executing query 036	2024-06-24 18:05:23.530942 Executed query 036 in 6.612802 seconds
+2024-06-24 18:05:23.531348 Executing query 062	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     612811[child_sequence:1]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073905808]
+  -----------------------------------------------
+
+
+	2024-06-24 18:05:23.743387 Failed to execute query 062
+2024-06-24 18:05:23.743881 Executing query 027	2024-06-24 18:05:30.429087 Executed query 027 in 6.526301 seconds
+2024-06-24 18:05:30.429516 Executing query 078	2024-06-24 18:05:38.946287 Executed query 078 in 8.330165 seconds
+2024-06-24 18:05:38.946688 Executing query 079	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     612838[child_sequence:1]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073954965]
+  -----------------------------------------------
+
+
+	2024-06-24 18:05:39.170120 Failed to execute query 079
+2024-06-24 18:05:39.170617 Executing query 018	2024-06-24 18:05:49.639275 Executed query 018 in 10.287334 seconds
+2024-06-24 18:05:49.639701 Executing query 072	2024-06-24 18:06:03.654179 Executed query 072 in 13.8333 seconds
+2024-06-24 18:06:03.654599 Executing query 075	2024-06-24 18:06:22.337989 Executed query 075 in 18.501338 seconds
+2024-06-24 18:06:22.338458 Executing query 085	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     612871[child_sequence:1]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073922222]
+  -----------------------------------------------
+
+
+	2024-06-24 18:06:22.601365 Failed to execute query 085
+2024-06-24 18:06:22.601909 Executing query 064	2024-06-24 18:06:34.502034 Executed query 064 in 11.72095 seconds
+2024-06-24 18:06:34.502457 Executing query 090	2024-06-24 18:06:37.911236 Executed query 090 in 3.243159 seconds
+2024-06-24 18:06:37.911627 Executing query 047	2024-06-24 18:06:49.700130 Executed query 047 in 11.624079 seconds
+2024-06-24 18:06:49.700548 Executing query 082	2024-06-24 18:06:57.203233 Executed query 082 in 6.863044 seconds
+2024-06-24 18:06:57.203634 Executing query 045	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     612928[child_sequence:1]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073987725]
+  -----------------------------------------------
+
+
+	2024-06-24 18:06:57.456191 Failed to execute query 045
+2024-06-24 18:06:57.456682 Executing query 087	2024-06-24 18:07:04.002297 Executed query 087 in 6.340252 seconds
+2024-06-24 18:07:04.002675 Executing query 059	2024-06-24 18:07:18.508611 Executed query 059 in 14.316554 seconds
+2024-06-24 18:07:18.509016 Executing query 052	2024-06-24 18:07:21.658098 Executed query 052 in 2.988742 seconds
+2024-06-24 18:07:21.658566 Executing query 071	2024-06-24 18:07:32.063151 Executed query 071 in 10.221883 seconds
+2024-06-24 18:07:32.063524 Executing query 028	2024-06-24 18:07:36.090059 Executed query 028 in 3.834421 seconds
+2024-06-24 18:07:36.090461 Executing query 054	2024-06-24 18:07:45.523237 Executed query 054 in 9.255536 seconds
+2024-06-24 18:07:45.523655 Executing query 003	2024-06-24 18:07:48.847489 Executed query 003 in 3.145143 seconds
+2024-06-24 18:07:48.847900 Executing query 002	2024-06-24 18:07:52.897760 Executed query 002 in 3.876077 seconds
+2024-06-24 18:07:52.898128 Executing query 098	2024-06-24 18:07:59.424285 Executed query 098 in 6.350626 seconds
+2024-06-24 18:07:59.424670 Executing query 093	2024-06-24 18:08:05.824310 Executed query 093 in 6.230262 seconds
+2024-06-24 18:08:05.824712 Executing query 057	2024-06-24 18:08:25.009519 Executed query 057 in 19.000304 seconds
+2024-06-24 18:08:25.009931 Executing query 026	2024-06-24 18:08:28.687293 Executed query 026 in 3.516798 seconds
+2024-06-24 18:08:28.687660 Executing query 033	2024-06-24 18:08:45.822023 Executed query 033 in 16.964465 seconds
+2024-06-24 18:08:45.822476 Executing query 067	2024-06-24 18:08:55.005201 Executed query 067 in 8.996646 seconds
+2024-06-24 18:08:55.005609 Executing query 097	2024-06-24 18:09:02.397466 Executed query 097 in 7.190277 seconds
+2024-06-24 18:09:02.397845 Executing query 092	2024-06-24 18:09:09.115597 Executed query 092 in 6.554724 seconds
+2024-06-24 18:09:09.115985 Executing query 017	2024-06-24 18:09:16.888911 Executed query 017 in 7.614151 seconds
+2024-06-24 18:09:16.889336 Executing query 084	2024-06-24 18:09:20.630198 Executed query 084 in 3.577409 seconds
+2024-06-24 18:09:20.630568 Executing query 006	2024-06-24 18:09:31.049864 Executed query 006 in 10.238336 seconds
+2024-06-24 18:09:31.050268 Executing query 051	2024-06-24 18:09:41.856593 Executed query 051 in 10.629557 seconds
+2024-06-24 18:09:41.857002 Executing query 024	2024-06-24 18:09:55.273561 Executed query 024 in 13.253891 seconds
+2024-06-24 18:09:55.273971 Executing query 025	2024-06-24 18:10:05.736000 Executed query 025 in 10.25188 seconds
+2024-06-24 18:10:05.736395 Executing query 022	2024-06-24 18:10:12.644067 Executed query 022 in 6.724923 seconds
+2024-06-24 18:10:12.644455 Executing query 048	2024-06-24 18:10:19.762871 Executed query 048 in 6.954252 seconds
+2024-06-24 18:10:19.763282 Executing query 095	2024-06-24 18:10:26.333122 Executed query 095 in 6.411779 seconds
+2024-06-24 18:10:26.333510 Executing query 074	2024-06-24 18:10:34.397996 Executed query 074 in 7.898798 seconds
+2024-06-24 18:10:34.398462 Executing query 061	2024-06-24 18:10:47.868038 Executed query 061 in 13.295902 seconds
+2024-06-24 18:10:47.868504 Executing query 089	2024-06-24 18:10:55.000144 Executed query 089 in 6.955358 seconds
+2024-06-24 18:10:55.000560 Executing query 058	2024-06-24 18:11:12.688879 Executed query 058 in 17.504255 seconds
+2024-06-24 18:11:12.689294 Executing query 068	2024-06-24 18:11:18.233317 Executed query 068 in 5.375422 seconds
+2024-06-24 18:11:18.233739 Executing query 021	2024-06-24 18:11:25.227262 Executed query 021 in 6.833526 seconds
+2024-06-24 18:11:25.227674 Executing query 020	2024-06-24 18:11:28.878322 Executed query 020 in 3.488695 seconds
+2024-06-24 18:11:28.878747 Executing query 030	2024-06-24 18:11:42.789334 Executed query 030 in 13.7428 seconds
+2024-06-24 18:11:42.789743 Executing query 040	2024-06-24 18:11:48.696180 Executed query 040 in 5.740255 seconds
+2024-06-24 18:11:48.696618 Executing query 080	2024-06-24 18:11:59.582089 Executed query 080 in 10.699311 seconds
+2024-06-24 18:11:59.582514 Executing query 008	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     613295[child_sequence:1]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073815703]
+  -----------------------------------------------
+
+
+	2024-06-24 18:11:59.833045 Failed to execute query 008
+2024-06-24 18:11:59.833530 Executing query 073	2024-06-24 18:12:06.270453 Executed query 073 in 6.273708 seconds
+2024-06-24 18:12:06.270839 Executing query 083	2024-06-24 18:12:23.398675 Executed query 083 in 16.951207 seconds
+2024-06-24 18:12:23.399100 Executing query 013	2024-06-24 18:12:30.879564 Executed query 013 in 7.315511 seconds
+2024-06-24 18:12:30.879965 Executing query 035	2024-06-24 18:12:41.060770 Executed query 035 in 10.019693 seconds
+2024-06-24 18:12:41.061207 Executing query 077	syntax error at or near "returns"
+LINE 99:         , coalesce(returns, 0) returns
+                                        ^
+
+	2024-06-24 18:12:41.239806 Failed to execute query 077
+2024-06-24 18:12:41.240312 Executing query 081	2024-06-24 18:12:51.286312 Executed query 081 in 9.875749 seconds
+2024-06-24 18:12:51.286734 Executing query 011	2024-06-24 18:12:59.246003 Executed query 011 in 7.796037 seconds
+2024-06-24 18:12:59.246426 Executing query 014	2024-06-24 18:13:35.308703 Executed query 014 in 35.889243 seconds
+2024-06-24 18:13:35.309121 Executing query 069	2024-06-24 18:14:01.158924 Executed query 069 in 25.678223 seconds
+2024-06-24 18:14:01.159345 Executing query 070	2024-06-24 18:14:11.491050 Executed query 070 in 10.160483 seconds
+2024-06-24 18:14:11.491460 Executing query 015	SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+DETAIL:  
+  -----------------------------------------------
+  error:  SUBSTR() function is not supported (Hint: use SUBSTRING instead)
+  code:      8001
+  context:   
+  query:     613436[child_sequence:1]
+  location:  cg_expr_fn_builder.cpp:8738
+  process:   padbmaster [pid=1073946809]
+  -----------------------------------------------
+
+
+	2024-06-24 18:14:11.719877 Failed to execute query 015
+2024-06-24 18:14:11.720384 Executing query 005	2024-06-24 18:14:13.238902 Executed query 005 in 1.348148 seconds
