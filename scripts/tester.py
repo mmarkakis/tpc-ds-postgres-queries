@@ -11,7 +11,7 @@ REDSHIFT_PASSWORD = "Postgres1"
 REDSHIFT_ENDPOINT = "tpcds-sf100-preview-workgroup.941474060611.us-east-1.redshift-serverless.amazonaws.com"
 
 # Directory containing SQL files
-SQL_FILES_DIR = "."
+SQL_FILES_DIR = "../queries/1per"
 
 # Initialize counters
 success_count = 0
@@ -49,7 +49,7 @@ def execute_query(query, query_id):
 
 
 # Log file for query results
-LOG_FILE = f"./{datetime.now()}-execution.log"
+LOG_FILE = f"../logs/{datetime.now()}-execution.log"
 with open(LOG_FILE, "w+") as f:
 
     # Read and execute each SQL file
