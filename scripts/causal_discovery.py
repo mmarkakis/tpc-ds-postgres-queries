@@ -151,7 +151,7 @@ def run_method_with_timer(dataset_name, method_name, options, fres):
         model = option
         # Open a file for logging, with the model and the timestamp in the name
         log_file = open(
-            f"evaluation/gpt-logs/{model}-{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}.txt",
+            f"./{model}-{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}.txt",
             "w",
         )
 
@@ -300,13 +300,13 @@ def main():
     # Run all the discovery methods
     print("\n\n========================================\n\n")
     print(f"{datetime.now()} Starting {dataset_name}\n")
-    run_method_with_timer(dataset_name, "pc", PC_OPTIONS, fres)
-    run_method_with_timer(dataset_name, "fci", FCI_OPTIONS, fres)
-    run_method_with_timer(dataset_name, "lingam", LINGAM_OPTIONS, fres)
-    run_method_with_timer(dataset_name, "gin", GIN_OPTIONS, fres)
+    #run_method_with_timer(dataset_name, "pc", PC_OPTIONS, fres)
+    #run_method_with_timer(dataset_name, "fci", FCI_OPTIONS, fres)
+    #run_method_with_timer(dataset_name, "lingam", LINGAM_OPTIONS, fres)
+    #run_method_with_timer(dataset_name, "gin", GIN_OPTIONS, fres)
     #run_method_with_timer(dataset_name, "grasp", GRASP_OPTIONS, fres)
     #run_method_with_timer(dataset_name, "ges", GES_OPTIONS, fres)
-    run_method_with_timer(dataset_name, "exact_search", EXACT_SEARCH_OPTIONS, fres)
+    #run_method_with_timer(dataset_name, "exact_search", EXACT_SEARCH_OPTIONS, fres)
     run_method_with_timer(dataset_name, "gpt", GPT_OPTIONS, fres)
 
     fout.close()

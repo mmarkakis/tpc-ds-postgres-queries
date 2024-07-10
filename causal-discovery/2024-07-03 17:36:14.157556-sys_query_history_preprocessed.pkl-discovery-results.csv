@@ -1,0 +1,20 @@
+dataset_name,method_name,option,result,time
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,pc,fisherz,success,0
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,pc,mv_fisherz,success,0
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,pc,mc_fisherz,exception: 'm',
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,pc,kci,success,1992
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,pc,chisq,success,321
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,pc,gsq,success,0
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,pc,d_separation,exception: 'NoneType' object has no attribute 'is_directed',
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,fci,fisherz,success,0
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,fci,kci,success,2467
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,fci,chisq,success,319
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,fci,gsq,success,0
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,lingam,placeholder,success,0
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,gin,kci,success,765
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,gin,hsic,success,885
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,exact_search,dp,exception: 'tuple' object has no attribute 'shape',
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,exact_search,astar,exception: 'tuple' object has no attribute 'shape',
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,gpt,gpt-4,exception: [Errno 2] No such file or directory: 'evaluation/gpt-logs/gpt-4-2024-07-05-19-15-44.txt',
+dataset_name,method_name,option,result,time
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,gpt,gpt-4,success,852

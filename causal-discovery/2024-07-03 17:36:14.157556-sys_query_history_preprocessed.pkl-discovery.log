@@ -1,0 +1,74 @@
+
+
+========================================
+
+
+2024-07-05 17:23:01.014492 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
+
+2024-07-05 17:23:01.016384 Running pc with fisherz
+2024-07-05 17:23:01.131490 Writing out pc with fisherz
+2024-07-05 17:23:01.304375 Done running pc with fisherz
+2024-07-05 17:23:01.304499 Running pc with mv_fisherz
+2024-07-05 17:23:01.590622 Writing out pc with mv_fisherz
+2024-07-05 17:23:01.762232 Done running pc with mv_fisherz
+2024-07-05 17:23:01.762374 Running pc with mc_fisherz
+2024-07-05 17:23:01.771671 Error running <function run_method_with_timer.<locals>.run_pc at 0x7cbcc91eb7e0>: 'm'
+2024-07-05 17:23:01.775877 Done running pc with mc_fisherz
+2024-07-05 17:23:01.775971 Running pc with kci
+2024-07-05 17:56:14.053201 Writing out pc with kci
+2024-07-05 17:56:14.273459 Done running pc with kci
+2024-07-05 17:56:14.273628 Running pc with chisq
+2024-07-05 18:01:35.529862 Writing out pc with chisq
+2024-07-05 18:01:35.630190 Done running pc with chisq
+2024-07-05 18:01:35.630385 Running pc with gsq
+2024-07-05 18:01:35.986332 Writing out pc with gsq
+2024-07-05 18:01:36.081123 Done running pc with gsq
+2024-07-05 18:01:36.081385 Running pc with d_separation
+2024-07-05 18:01:36.090895 Error running <function run_method_with_timer.<locals>.run_pc at 0x7cbcc91eb7e0>: 'NoneType' object has no attribute 'is_directed'
+2024-07-05 18:01:36.094418 Done running pc with d_separation
+2024-07-05 18:01:36.098611 Running fci with fisherz
+X10 --> X8
+X12 --> X8
+X12 --> X10
+2024-07-05 18:01:36.231446 Writing out fci with fisherz
+2024-07-05 18:01:36.376731 Done running fci with fisherz
+2024-07-05 18:01:36.376954 Running fci with kci
+2024-07-05 18:42:43.982844 Writing out fci with kci
+2024-07-05 18:42:44.207260 Done running fci with kci
+2024-07-05 18:42:44.207612 Running fci with chisq
+2024-07-05 18:48:03.328104 Writing out fci with chisq
+2024-07-05 18:48:03.423445 Done running fci with chisq
+2024-07-05 18:48:03.423807 Running fci with gsq
+2024-07-05 18:48:03.775943 Writing out fci with gsq
+2024-07-05 18:48:03.867001 Done running fci with gsq
+2024-07-05 18:48:03.873578 Running lingam with placeholder
+/home/markakis/logs-venv/lib/python3.12/site-packages/sklearn/decomposition/_fastica.py:128: ConvergenceWarning: FastICA did not converge. Consider increasing tolerance or the maximum number of iterations.
+  warnings.warn(
+2024-07-05 18:48:04.249085 Writing out lingam with placeholder
+2024-07-05 18:48:04.585434 Done running lingam with placeholder
+2024-07-05 18:48:04.588202 Running gin with kci
+2024-07-05 19:00:50.501088 Writing out gin with kci
+2024-07-05 19:00:50.624694 Done running gin with kci
+2024-07-05 19:00:50.624979 Running gin with hsic
+2024-07-05 19:15:35.677735 Writing out gin with hsic
+2024-07-05 19:15:35.806090 Done running gin with hsic
+2024-07-05 19:15:35.812898 Running exact_search with dp
+2024-07-05 19:15:39.153893 Error running <function run_method_with_timer.<locals>.run_exact_search at 0x7cbcc870e3e0>: 'tuple' object has no attribute 'shape'
+2024-07-05 19:15:39.164271 Done running exact_search with dp
+2024-07-05 19:15:39.164411 Running exact_search with astar
+2024-07-05 19:15:44.603315 Error running <function run_method_with_timer.<locals>.run_exact_search at 0x7cbcc870e3e0>: 'tuple' object has no attribute 'shape'
+2024-07-05 19:15:44.613347 Done running exact_search with astar
+2024-07-05 19:15:44.616379 Running gpt with gpt-4
+2024-07-05 19:15:44.624495 Error running <function run_method_with_timer.<locals>.run_gpt at 0x7cbcc870ef20>: [Errno 2] No such file or directory: 'evaluation/gpt-logs/gpt-4-2024-07-05-19-15-44.txt'
+2024-07-05 19:15:44.629476 Done running gpt with gpt-4
+
+
+========================================
+
+
+2024-07-08 10:27:37.465601 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
+
+2024-07-08 10:27:37.467389 Running gpt with gpt-4
+Outer edge-finding loop using GPT...:   0%|          | 0/12 [00:00<?, ?it/s]Outer edge-finding loop using GPT...:   8%|▊         | 1/12 [02:15<24:54, 135.90s/it]Outer edge-finding loop using GPT...:  17%|█▋        | 2/12 [04:35<23:02, 138.21s/it]Outer edge-finding loop using GPT...:  25%|██▌       | 3/12 [06:21<18:29, 123.31s/it]Outer edge-finding loop using GPT...:  33%|███▎      | 4/12 [08:15<15:58, 119.76s/it]Outer edge-finding loop using GPT...:  42%|████▏     | 5/12 [09:49<12:54, 110.59s/it]Outer edge-finding loop using GPT...:  50%|█████     | 6/12 [10:57<09:36, 96.08s/it] Outer edge-finding loop using GPT...:  58%|█████▊    | 7/12 [12:08<07:18, 87.64s/it]Outer edge-finding loop using GPT...:  67%|██████▋   | 8/12 [13:01<05:06, 76.61s/it]Outer edge-finding loop using GPT...:  75%|███████▌  | 9/12 [13:34<03:09, 63.14s/it]Outer edge-finding loop using GPT...:  83%|████████▎ | 10/12 [13:58<01:41, 50.96s/it]Outer edge-finding loop using GPT...:  92%|█████████▏| 11/12 [14:12<00:39, 39.58s/it]Outer edge-finding loop using GPT...: 100%|██████████| 12/12 [14:12<00:00, 71.01s/it]
+2024-07-08 10:41:49.622775 Writing out gpt with gpt-4
+2024-07-08 10:41:50.009098 Done running gpt with gpt-4
