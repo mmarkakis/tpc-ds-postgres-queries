@@ -39,8 +39,10 @@ df.drop('query_rep', axis=1, inplace=True)
 
 # Drop constant columns and identifier columns
 constant_columns = df.columns[df.nunique() == 1]
+print(f"Removing constant columns: {constant_columns}")
 df = df.drop(constant_columns, axis=1)
 identifer_columns = df.columns[(df.nunique() == df.shape[0]) | df.columns.str.endswith('_id')]
+print(f"Removing identifier columns: {identifer_columns}")
 df = df.drop(identifer_columns, axis=1)
 
 # One-hot encode categorical columns and drop the original columns
