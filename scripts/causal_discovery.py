@@ -7,9 +7,11 @@ from causallearn.search.ConstraintBased.FCI import fci
 from causallearn.search.FCMBased import lingam
 from causallearn.search.FCMBased.lingam.utils import make_dot
 from causallearn.search.HiddenCausal.GIN import GIN
-#from causallearn.search.PermutationBased.GRaSP import grasp
-#from causallearn.search.ScoreBased.GES import ges
+
+# from causallearn.search.PermutationBased.GRaSP import grasp
+# from causallearn.search.ScoreBased.GES import ges
 from causallearn.search.ScoreBased.ExactSearch import bic_exact_search
+from DAGBuilder import DAGBuilder
 from causallearn.graph.Endpoint import Endpoint
 import pickle
 from datetime import datetime
@@ -34,7 +36,7 @@ PC_OPTIONS = [
 
 FCI_OPTIONS = ["fisherz", "kci", "chisq", "gsq"]
 
-LINGAM_OPTIONS = ['placeholder']
+LINGAM_OPTIONS = ["placeholder"]
 
 GIN_OPTIONS = ["kci", "hsic"]
 
@@ -61,6 +63,7 @@ EXACT_SEARCH_OPTIONS = ["dp", "astar"]
 
 GPT_OPTIONS = ["gpt-4"]
 
+CDI_GPT_OPTIONS = ["text-davinci-002"]
 
 
 def run_method_with_timer(dataset_name, method_name, options, fres):
@@ -181,8 +184,8 @@ def run_method_with_timer(dataset_name, method_name, options, fres):
                         f"""A. changing {var_a} causes a change in {var_b}. """
                         f"""B. changing {var_b} causes a change in {var_a}. """
                         f"""C. Neither of the two. """
-                        f""" Here are some example values of {var_a} : [{examples_a}]"""
-                        f""" Here are the corresponding values of {var_b} : [{examples_b}]"""
+                        # f""" Here are some example values of {var_a} : [{examples_a}]"""
+                        # f""" Here are the corresponding values of {var_b} : [{examples_b}]"""
                         """Let's work this out in a step by step way to be sure that we have the right answer. """
                         """Then provide your ﬁnal answer within the tags <Answer>A/B/C</Answer>.""",
                     },
@@ -217,6 +220,12 @@ def run_method_with_timer(dataset_name, method_name, options, fres):
         log_file.close()
         nx_cg = graph
         return nx_cg
+
+    def run_cdi_gpt(option):
+        model = option
+        unpruned_graph = DAGBuilder.buildDAGGPT3(data_df, model=model)
+        pruned_graph = DAGBuilder.pruneEdges(unpruned_graph, data_df)
+        return pruned_graph
 
     # Run a function within a try except block
     def run_safe(function, option):
@@ -284,7 +293,7 @@ def run_method_with_timer(dataset_name, method_name, options, fres):
 
 
 def main():
-    parser = argparse.ArgumentParser()  
+    parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type=str, required=True)
     args = parser.parse_args()
     dataset_name = args.dataset
@@ -296,18 +305,19 @@ def main():
     fres = open(f"{dataset_name}-discovery-results.csv", "a")
     fres.write(f"dataset_name,method_name,option,result,time\n")
     fres.flush()
-    
+
     # Run all the discovery methods
     print("\n\n========================================\n\n")
     print(f"{datetime.now()} Starting {dataset_name}\n")
-    #run_method_with_timer(dataset_name, "pc", PC_OPTIONS, fres)
-    #run_method_with_timer(dataset_name, "fci", FCI_OPTIONS, fres)
-    #run_method_with_timer(dataset_name, "lingam", LINGAM_OPTIONS, fres)
-    #run_method_with_timer(dataset_name, "gin", GIN_OPTIONS, fres)
-    #run_method_with_timer(dataset_name, "grasp", GRASP_OPTIONS, fres)
-    #run_method_with_timer(dataset_name, "ges", GES_OPTIONS, fres)
-    #run_method_with_timer(dataset_name, "exact_search", EXACT_SEARCH_OPTIONS, fres)
-    run_method_with_timer(dataset_name, "gpt", GPT_OPTIONS, fres)
+    # run_method_with_timer(dataset_name, "pc", PC_OPTIONS, fres)
+    # run_method_with_timer(dataset_name, "fci", FCI_OPTIONS, fres)
+    # run_method_with_timer(dataset_name, "lingam", LINGAM_OPTIONS, fres)
+    # run_method_with_timer(dataset_name, "gin", GIN_OPTIONS, fres)
+    # run_method_with_timer(dataset_name, "grasp", GRASP_OPTIONS, fres)
+    # run_method_with_timer(dataset_name, "ges", GES_OPTIONS, fres)
+    # run_method_with_timer(dataset_name, "exact_search", EXACT_SEARCH_OPTIONS, fres)
+    # run_method_with_timer(dataset_name, "gpt", GPT_OPTIONS, fres)
+    run_method_with_timer(dataset_name, "cdi_gpt", CDI_GPT_OPTIONS, fres)
 
     fout.close()
     fres.close()
