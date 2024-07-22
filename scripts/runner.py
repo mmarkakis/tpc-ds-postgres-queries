@@ -49,7 +49,7 @@ def execute_query(query, query_id):
 
 
 # Log file for query results
-LOG_FILE = f"../logs/{datetime.now(tz=timezone.utc)}-execution.log"
+LOG_FILE = f"../execution-logs/{datetime.now(tz=timezone.utc)}-execution.log"
 with open(LOG_FILE, "w+") as f:
 
     # List all directories in the SQL files directory, in sorted order
