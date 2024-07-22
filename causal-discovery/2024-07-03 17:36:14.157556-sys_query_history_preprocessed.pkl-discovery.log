@@ -69,6 +69,118 @@ X12 --> X10
 2024-07-08 10:27:37.465601 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
 
 2024-07-08 10:27:37.467389 Running gpt with gpt-4
-Outer edge-finding loop using GPT...:   0%|          | 0/12 [00:00<?, ?it/s]Outer edge-finding loop using GPT...:   8%|▊         | 1/12 [02:15<24:54, 135.90s/it]Outer edge-finding loop using GPT...:  17%|█▋        | 2/12 [04:35<23:02, 138.21s/it]Outer edge-finding loop using GPT...:  25%|██▌       | 3/12 [06:21<18:29, 123.31s/it]Outer edge-finding loop using GPT...:  33%|███▎      | 4/12 [08:15<15:58, 119.76s/it]Outer edge-finding loop using GPT...:  42%|████▏     | 5/12 [09:49<12:54, 110.59s/it]Outer edge-finding loop using GPT...:  50%|█████     | 6/12 [10:57<09:36, 96.08s/it] Outer edge-finding loop using GPT...:  58%|█████▊    | 7/12 [12:08<07:18, 87.64s/it]Outer edge-finding loop using GPT...:  67%|██████▋   | 8/12 [13:01<05:06, 76.61s/it]Outer edge-finding loop using GPT...:  75%|███████▌  | 9/12 [13:34<03:09, 63.14s/it]Outer edge-finding loop using GPT...:  83%|████████▎ | 10/12 [13:58<01:41, 50.96s/it]Outer edge-finding loop using GPT...:  92%|█████████▏| 11/12 [14:12<00:39, 39.58s/it]Outer edge-finding loop using GPT...: 100%|██████████| 12/12 [14:12<00:00, 71.01s/it]
+
+Outer edge-finding loop using GPT...:   0%|          | 0/12 [00:00<?, ?it/s]
+Outer edge-finding loop using GPT...:   8%|▊         | 1/12 [02:15<24:54, 135.90s/it]
+Outer edge-finding loop using GPT...:  17%|█▋        | 2/12 [04:35<23:02, 138.21s/it]
+Outer edge-finding loop using GPT...:  25%|██▌       | 3/12 [06:21<18:29, 123.31s/it]
+Outer edge-finding loop using GPT...:  33%|███▎      | 4/12 [08:15<15:58, 119.76s/it]
+Outer edge-finding loop using GPT...:  42%|████▏     | 5/12 [09:49<12:54, 110.59s/it]
+Outer edge-finding loop using GPT...:  50%|█████     | 6/12 [10:57<09:36, 96.08s/it] 
+Outer edge-finding loop using GPT...:  58%|█████▊    | 7/12 [12:08<07:18, 87.64s/it]
+Outer edge-finding loop using GPT...:  67%|██████▋   | 8/12 [13:01<05:06, 76.61s/it]
+Outer edge-finding loop using GPT...:  75%|███████▌  | 9/12 [13:34<03:09, 63.14s/it]
+Outer edge-finding loop using GPT...:  83%|████████▎ | 10/12 [13:58<01:41, 50.96s/it]
+Outer edge-finding loop using GPT...:  92%|█████████▏| 11/12 [14:12<00:39, 39.58s/it]
+Outer edge-finding loop using GPT...: 100%|██████████| 12/12 [14:12<00:00, 71.01s/it]
 2024-07-08 10:41:49.622775 Writing out gpt with gpt-4
 2024-07-08 10:41:50.009098 Done running gpt with gpt-4
+
+
+
+
+========================================
+
+
+2024-07-15 08:31:25.718751 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
+
+2024-07-15 08:31:25.720644 Running gpt with gpt-4
+
+Outer edge-finding loop using GPT...:   0%|          | 0/12 [00:00<?, ?it/s]
+Outer edge-finding loop using GPT...:   8%|▊         | 1/12 [02:10<23:56, 130.55s/it]
+Outer edge-finding loop using GPT...:  17%|█▋        | 2/12 [04:11<20:51, 125.12s/it]
+Outer edge-finding loop using GPT...:  25%|██▌       | 3/12 [05:59<17:35, 117.23s/it]
+Outer edge-finding loop using GPT...:  33%|███▎      | 4/12 [07:44<14:58, 112.28s/it]
+Outer edge-finding loop using GPT...:  42%|████▏     | 5/12 [09:07<11:52, 101.74s/it]
+Outer edge-finding loop using GPT...:  50%|█████     | 6/12 [10:12<08:56, 89.38s/it] 
+Outer edge-finding loop using GPT...:  58%|█████▊    | 7/12 [11:07<06:30, 78.05s/it]
+Outer edge-finding loop using GPT...:  67%|██████▋   | 8/12 [11:50<04:27, 66.95s/it]
+Outer edge-finding loop using GPT...:  75%|███████▌  | 9/12 [12:21<02:47, 55.68s/it]
+Outer edge-finding loop using GPT...:  83%|████████▎ | 10/12 [12:40<01:28, 44.33s/it]
+Outer edge-finding loop using GPT...:  92%|█████████▏| 11/12 [12:53<00:34, 34.74s/it]
+Outer edge-finding loop using GPT...: 100%|██████████| 12/12 [12:53<00:00, 64.46s/it]
+2024-07-15 08:44:19.314478 Writing out gpt with gpt-4
+2024-07-15 08:44:19.798887 Done running gpt with gpt-4
+
+
+
+========================================
+
+
+2024-07-17 17:30:55.533371 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
+
+2024-07-17 17:30:55.538061 Running cdi_gpt with text-davinci-002
+2024-07-17 17:30:55.560624 Error running <function run_method_with_timer.<locals>.run_cdi_gpt at 0x78698d1d0d60>: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-07-17 17:30:55.573218 Done running cdi_gpt with text-davinci-002
+
+
+========================================
+
+
+2024-07-17 17:32:39.125709 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
+
+2024-07-17 17:32:39.129941 Running cdi_gpt with text-davinci-002
+2024-07-17 17:32:39.149223 Error running <function run_method_with_timer.<locals>.run_cdi_gpt at 0x753e965da3e0>: Missing required arguments; Expected either ('model' and 'prompt') or ('model', 'prompt' and 'stream') arguments to be given
+2024-07-17 17:32:39.163991 Done running cdi_gpt with text-davinci-002
+
+
+========================================
+
+
+2024-07-17 17:33:28.332297 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
+
+2024-07-17 17:33:28.336306 Running cdi_gpt with text-davinci-002
+2024-07-17 17:33:28.593820 Error running <function run_method_with_timer.<locals>.run_cdi_gpt at 0x7ef3da5ce3e0>: Error code: 404 - {'error': {'message': 'The model `text-davinci-002` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2024-07-17 17:33:28.618396 Done running cdi_gpt with text-davinci-002
+
+
+========================================
+
+
+2024-07-17 17:33:53.842933 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
+
+2024-07-17 17:33:53.848613 Running cdi_gpt with davinci-002
+returned_bytes ; execution_time
+compile_time ; elapsed_time
+num of edges before pruning:  2
+num of edges after pruning:  2
+2024-07-17 17:37:30.854373 Writing out cdi_gpt with davinci-002
+2024-07-17 17:37:31.076949 Done running cdi_gpt with davinci-002
+
+
+========================================
+
+
+2024-07-17 17:40:44.427228 Starting /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl
+
+2024-07-17 17:40:44.431104 Running cdi_gpt with pruned*davinci-002
+returned_bytes ; execution_time
+compile_time ; elapsed_time
+num of edges before pruning:  2
+num of edges after pruning:  2
+2024-07-17 17:44:21.659630 Writing out cdi_gpt with pruned*davinci-002
+2024-07-17 17:44:21.920542 Done running cdi_gpt with pruned*davinci-002
+2024-07-17 17:44:21.920875 Running cdi_gpt with unpruned*davinci-002
+returned_bytes ; execution_time
+compile_time ; elapsed_time
+2024-07-17 17:48:09.177459 Writing out cdi_gpt with unpruned*davinci-002
+2024-07-17 17:48:09.442065 Done running cdi_gpt with unpruned*davinci-002

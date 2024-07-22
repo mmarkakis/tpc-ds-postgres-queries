@@ -18,3 +18,25 @@ dataset_name,method_name,option,result,time
 /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,gpt,gpt-4,exception: [Errno 2] No such file or directory: 'evaluation/gpt-logs/gpt-4-2024-07-05-19-15-44.txt',
 dataset_name,method_name,option,result,time
 /home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,gpt,gpt-4,success,852
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,gpt,gpt-4,success,773
+
+dataset_name,method_name,option,result,time
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,cdi_gpt,text-davinci-002,exception: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+,
+dataset_name,method_name,option,result,time
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,cdi_gpt,text-davinci-002,exception: Missing required arguments; Expected either ('model' and 'prompt') or ('model', 'prompt' and 'stream') arguments to be given,
+dataset_name,method_name,option,result,time
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,cdi_gpt,text-davinci-002,exception: Error code: 404 - {'error': {'message': 'The model `text-davinci-002` has been deprecated, learn more here: https://platform.openai.com/docs/deprecations', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}},
+dataset_name,method_name,option,result,time
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,cdi_gpt,davinci-002,success,216
+dataset_name,method_name,option,result,time
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,cdi_gpt,pruned*davinci-002,success,217
+/home/markakis/tpc-ds-postgres-queries/metrics/2024-07-03 17:36:14.157556-sys_query_history_preprocessed.pkl,cdi_gpt,unpruned*davinci-002,success,227

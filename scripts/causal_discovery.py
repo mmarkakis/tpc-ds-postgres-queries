@@ -63,7 +63,7 @@ EXACT_SEARCH_OPTIONS = ["dp", "astar"]
 
 GPT_OPTIONS = ["gpt-4"]
 
-CDI_GPT_OPTIONS = ["text-davinci-002"]
+CDI_GPT_OPTIONS = ["pruned*davinci-002", "unpruned*davinci-002"]
 
 
 def run_method_with_timer(dataset_name, method_name, options, fres):
@@ -222,8 +222,11 @@ def run_method_with_timer(dataset_name, method_name, options, fres):
         return nx_cg
 
     def run_cdi_gpt(option):
-        model = option
+        prune_flag, model = option.split("*")
         unpruned_graph = DAGBuilder.buildDAGGPT3(data_df, model=model)
+        if prune_flag == "unpruned":
+            return unpruned_graph
+        
         pruned_graph = DAGBuilder.pruneEdges(unpruned_graph, data_df)
         return pruned_graph
 
