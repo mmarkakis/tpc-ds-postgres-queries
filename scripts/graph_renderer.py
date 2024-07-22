@@ -12,7 +12,7 @@ class GraphRenderer:
     """
 
     @staticmethod
-    def draw_graph(graph: nx.DiGraph, var_info: dict[int, str]) -> str:
+    def draw_graph(graph: nx.DiGraph, var_info: dict[int, str], layout: str = 'planar') -> str:
         """
         Draw a graph with appropriate margins and node tags.
 
@@ -20,14 +20,28 @@ class GraphRenderer:
             graph: The graph to be drawn.
             var_info: A dictionary containing the names of the variables in the
                 graph.
+            layout: The layout to be used for the graph. Can be one of 'planar',
+                'topological', or 'spring'. Defaults to 'planar'.
 
         Returns:
             A base64-encoded string representation of the graph.
         """
         if graph.number_of_nodes() == 0:
             return ""
-
-        pos = nx.spring_layout(graph)
+        pos = None
+        if layout == 'planar':
+            try:
+                pos = nx.planar_layout(graph)
+            except:
+                pass
+        if layout == 'topological' or pos == None:
+            try:
+                topo_sort = list(nx.topological_sort(graph))
+                pos = nx.bfs_layout(graph, topo_sort[0])
+            except:
+                pass
+        if layout == 'spring' or pos == None:
+            pos = nx.spring_layout(graph)
         nx.draw(
             graph,
             pos,
@@ -65,7 +79,7 @@ class GraphRenderer:
         return img_str
 
     @staticmethod
-    def save_graph(graph: nx.DiGraph, var_info: dict[int, str], filename: str) -> None:
+    def save_graph(graph: nx.DiGraph, var_info: dict[int, str], filename: str, layout:str = 'planar') -> None:
         """
         Save the graph to a file as a png image.
 
@@ -74,8 +88,10 @@ class GraphRenderer:
             var_info: A dictionary containing the tags of the variables in the
                 graph.
             filename: The name of the file to which the graph should be saved.
+            layout: The layout to be used for the graph. Can be one of 'planar',
+                'topological', or 'spring'. Defaults to 'planar'.
         """
-        img_str = GraphRenderer.draw_graph(graph, var_info)
+        img_str = GraphRenderer.draw_graph(graph, var_info, layout)
         with open(filename, "wb") as f:
             f.write(base64.b64decode(img_str))
 
@@ -90,7 +106,7 @@ class GraphRenderer:
         return HTML('<img src="data:image/png;base64,{}" style="max-width: 100%; height: auto;">'.format(graph))
 
     @staticmethod
-    def display_graph(graph: nx.DiGraph, var_info: pd.DataFrame) -> None:
+    def display_graph(graph: nx.DiGraph, var_info: pd.DataFrame, layout:str = 'planar') -> None:
         """
         Display the graph.
 
@@ -98,9 +114,11 @@ class GraphRenderer:
             graph: The graph to be displayed.
             var_info: A dataframe containing the tags of the variables in the
                 graph.
+            layout: The layout to be used for the graph. Can be one of 'planar',
+                'topological', or 'spring'. Defaults to 'planar'.
         """
         display(
             GraphRenderer.graph_string_to_html(
-                GraphRenderer.draw_graph(graph, var_info)
+                GraphRenderer.draw_graph(graph, var_info, layout)
             )
         )
